@@ -1,0 +1,7 @@
+; MIN
+
+mov ah 3
+mov dl 20
+min dl 15
+int 21
+int 20

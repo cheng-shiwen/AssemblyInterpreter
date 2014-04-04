@@ -1,0 +1,10 @@
+; CLR SHW	
+
+mov ah 3
+mov dl 20
+mov bh 24
+chg dl bh
+int 21
+clr
+shw
+int 20

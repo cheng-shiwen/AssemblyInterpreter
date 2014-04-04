@@ -1,0 +1,6 @@
+; MUL
+mov ah 3
+mov dl 20
+mul dl 5
+int 21
+int 20

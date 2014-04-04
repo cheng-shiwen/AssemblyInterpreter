@@ -1,0 +1,20 @@
+; Newlines output
+
+	mov cx 10 
+	mov ah 2
+	mov dl 36
+
+again:
+	int 21
+	
+	inc dl
+
+	mov dh dl
+	mov dl A
+	int 21
+
+	mov dl dh
+
+	loop again
+
+	int 20

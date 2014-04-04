@@ -1,0 +1,7 @@
+; MAX
+
+mov ah 3
+mov dl 20
+max dl 21
+int 21
+int 20

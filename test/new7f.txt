@@ -1,0 +1,8 @@
+; CHG	
+
+mov ah 3
+mov dl 20
+mov bh 24
+chg dl bh
+int 21
+int 20

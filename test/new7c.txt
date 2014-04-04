@@ -1,0 +1,7 @@
+; DIV
+
+mov ah 3
+mov dl 20
+div dl 5
+int 21
+int 20
