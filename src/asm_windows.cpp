@@ -7,7 +7,7 @@ int main(int argc, char** argv)     //Command line parameters
 {
     if (argc != 2)                  //If the input parameters not 2, it is executed the sentences
     {
-        cout << "./asm asm_source_file" << endl;
+        cout << "Usage: <asm.exe> <source_file>" << endl;
         return 1;                   //Program exits
     }
 
