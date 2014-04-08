@@ -38,3 +38,9 @@ A simple interpreter of assembly language, supporting commands as follows:
 	cd Windows
 	make
 	asm.exe ../test/ex1.txt
+
+##### On Linux
+
+	cd Linux
+	make
+	./asm ../test/ex1.txt

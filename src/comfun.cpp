@@ -48,9 +48,9 @@ statement* find_label(statement* head, char* label)
     while (head)
     {
         if (strcmp(head->cmd, label) == 0)
-             return head;       //Return the node pointer store label
+            return head;       //Return the node pointer store label
         else
-             head = head->next;
+            head = head->next;
     }
     return NULL;       //Not find it, return NULL
 }
@@ -63,8 +63,8 @@ int atoh(char* str)
     for (int i=0; i<len; i++)
     {
         sum <<= 4;
-        if((str[i] >= '0' && str[i] <= '9') || (str[i] >= 'A' && str[i] <= 'F'))
-          sum += (isdigit(str[i]) ? (str[i]-'0') : (str[i]-'A'+10));    //Every four back to front characters in HEX to int
+        if ((str[i] >= '0' && str[i] <= '9') || (str[i] >= 'A' && str[i] <= 'F'))
+            sum += (isdigit(str[i]) ? (str[i]-'0') : (str[i]-'A'+10));    //Every four back to front characters in HEX to int
         else return -1;     //String for non-standard hexadecimal number to return -1
     }
     return sum;
